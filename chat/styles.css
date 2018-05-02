@@ -1,0 +1,102 @@
+html {
+  font-family: roboto;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.chat-ui {
+  height: 100%;
+  background: #eceff1;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.messages {
+  align-self: end;
+  padding-bottom: 28px;
+}
+
+.message {
+  display: grid;
+  margin: 7px 16px;
+  grid-template-columns: auto 1fr;
+  grid-gap: 4px;
+}
+
+.other-message {
+  margin: 7px 16px;
+}
+
+
+
+.text {
+  border-style: solid;
+  border-top-width: 7px;
+  border-right-width: 7px;
+  border-bottom-width: 7px;
+  border-left-width: 11.64px;
+  border-image: url(imgs/chat-them.svg) 24 24 24 39.74 fill stretch;
+  padding: 4px 6px;
+  width: fit-content;
+  margin-right: 20px;
+  line-height: 1.4;
+}
+
+.other-message .text {
+  border-bottom-width: 7px;
+  border-right-width: 11.64px;
+  border-image: url(imgs/chat-us.svg) 24 39.74 24 24 fill stretch;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.avatar {
+  background: #ccc;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 33px;
+  height: 33px;
+  background-image: url(imgs/dave.jpg);
+  background-size: 100%;
+}
+
+.main-header {
+  height: 55px;
+  background: #0f9d58;
+  display: flex;
+  align-items: center;
+}
+
+.back {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 35px 0 20px;
+}
+
+.chat-name {
+  font-weight: 500;
+  color: #fff;
+  line-height: 1;
+  font-size: 18px;
+  position: relative;
+  top: 1px;
+}
+
+.input {
+  border-top: 1px solid #e6e6e6;
+  background: #fff;
+  color: #607d8b;
+  padding: 16px;
+  position: relative;
+}
+
+a {
+  color: #2a56c6;
+  text-decoration: none;
+}

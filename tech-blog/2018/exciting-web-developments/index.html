@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Obscure Tech Blog</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <link rel="stylesheet" href="original-styles.css">
+    <link rel="stylesheet" href="additional-styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner page-width">
+        <a href="/" class="title">Obscure tech blog presents…</a>
+      </div>
+    </header>
+    <div class="container">
+
+  <div class="content-n-side">
+    <div class="content">
+
+<div class="article-content">
+  <h1>Web packages &amp; signed exchanges seem cool!</h1>
+  <time class="article-date" datetime="2018-02-27">
+    Posted two hours ago
+  </time>
+
+  <p>
+    Signed HTTP exchanges provide a way to prove the authenticity of a
+    resource in cases where the transport layer isn't sufficient.
+  </p>
+
+  <h2>How do they work?</h2>
+
+  <p>In the response of an HTTP exchange the server can include a
+   "Signature" header field holding a list of one or more
+   parameterised signatures that vouch for the content of the exchange.
+   Exactly which content the signature vouches for can depend on how the
+   exchange is transferred.
+
+  <p>The client categorizes each signature as "valid" or "invalid" by
+   validating that signature with its certificate or public key and
+   other metadata against the exchange's headers and content.
+   This validity then informs higher-level protocols.
+
+  <p>Each signature is parameterised with information to let a client
+   fetch assurance that a signed exchange is still valid, in the face of
+   revoked certificates and newly-discovered vulnerabilities.  This
+   assurance can be bundled back into the signed exchange and forwarded
+   to another client, which won't have to re-fetch this validity
+   information for some period of time.
+
+    </div>
+  </div>
+
+    </div>
+    </body>
+</html>

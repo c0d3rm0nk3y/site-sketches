@@ -1,0 +1,14 @@
+{
+  "name": "Chat",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "imgs/icon.png",
+      "sizes": "256x256"
+    }
+  ],
+  "background_color": "#eceff1",
+  "display": "standalone",
+  "start_url": "./",
+  "theme_color": "#0b8043"
+}
